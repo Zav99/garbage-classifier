@@ -77,7 +77,7 @@ def get_model(num_classes: int):
     # MODIFY: You can change this to use your custom model or a different pretrained one.
     # Example using a pretrained ResNet18
     if config.PRETRAINED_MODEL:
-        model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET18_V1)
+        model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
     else:
         model = models.resnet18(weights=None) # or weights=None for PyTorch 1.9+
 
